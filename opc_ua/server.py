@@ -54,8 +54,11 @@ def fun():
                 print(Temperature, Pressure, Humidity)
 
                 Temp.set_value(Temperature)
+                time.sleep(0.1)
                 Press.set_value(Pressure)
+                time.sleep(0.1)
                 Hum.set_value(Humidity)
+                time.sleep(0.1)
                 time.sleep(1)
 
             print("\n\nПРОШЛО 24 ЧАСА \n\n")

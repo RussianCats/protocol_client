@@ -140,7 +140,7 @@ int main(int argc, char **argv)
                 CS104_Slave_enqueueASDU(slave, newAsdu);
 
                 CS101_ASDU_destroy(newAsdu);
-               
+               Thread_sleep(100); 
             }
              Thread_sleep(1000); // время задержки данных
         }

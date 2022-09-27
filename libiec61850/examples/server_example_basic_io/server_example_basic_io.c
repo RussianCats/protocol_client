@@ -41,8 +41,11 @@ int main(int argc, char **argv)
             uint64_t timestamp = Hal_getTimeInMs();
             //Отправка данных на клиента
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn1_mag_f, num1);
+            Thread_sleep(100);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn2_mag_f, num2);
+            Thread_sleep(100);
             IedServer_updateFloatAttributeValue(iedServer, IEDMODEL_GenericIO_GGIO1_AnIn3_mag_f, num3);
+            Thread_sleep(100);
             IedServer_unlockDataModel(iedServer);
             Thread_sleep(1000);
         }
